@@ -1,0 +1,91 @@
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: inherit;
+}
+
+.top-bar {
+    border: 1px solid black;
+    background-color: white;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden{
+    display:none;
+}
+
+.question-area{
+    flex: 3;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+.question{
+    height:  400px;
+    display: none;
+
+}
+
+.question.active {
+    display: block;
+    overflow: scroll;
+}
+
+.bottom-bar {
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-reminder{
+    flex-grow:0.5;
+    align-self: center;
+}
+
+.flag-buttons{
+    /*padding: 1rem;*/
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+}
+.flag-buttons > div {
+    width: 50px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+.flag-buttons > div > * {
+    flex-grow: 1;
+}
+
+.selected{
+    background-color: lightgray;
+}
+
+.arrow-nav{
+    flex-grow: 2;
+    display: flex;
+}
+.arrow-nav * {
+    flex-grow: 1;
+}
+
+.missed-answer{
+    background-color: lightgray;
+}
+
+.wrong-answer{
+    background-color: lightPink;
+}
+.correct-answer{
+    background-color: palegreen;
+}
